@@ -1,0 +1,21 @@
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #cce6ff;
+}
+#app {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#hi {
+  color:  #5500ff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
