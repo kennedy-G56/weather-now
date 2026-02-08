@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import SearchBar from "../components/SearchBar";
 import WeatherCard from "../components/WeatherCard";
 
-// Import background images of your choice
+
+// Import background images
 import sunnyBg from "../assets/backgrounds/sunny.jpg";
 import cloudyBg from "../assets/backgrounds/cloudy.jpg";
 import rainyBg from "../assets/backgrounds/rainy.jpg";
@@ -12,7 +13,7 @@ export default function Home() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
 
-  // Determine background image based on weather your preffrence
+  // Determine background image based on weather
   const getBgStyle = () => {
     if (!weatherData) return { backgroundColor: "#99c4e0" };
 
@@ -38,6 +39,7 @@ export default function Home() {
       <SearchBar setCity={setCity} setWeatherData={setWeatherData} />
 
       {weatherData && <WeatherCard data={weatherData} />}
+
     </div>
   );
 }
